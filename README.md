@@ -1,2 +1,2 @@
-# gubn
+# LeetCode
 One LeetCode question a day。
