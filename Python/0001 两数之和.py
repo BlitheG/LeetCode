@@ -32,6 +32,18 @@
 
 class Solution:
     def twoSum(self, nums: list[int], target: int) -> list[int]:
+        # # 超过输出限制
+        # count = 0
+        # res = 1
+        # while count < len(nums):
+        #     if nums[count] + nums[res] == target:
+        #         return [count, res]
+        #     else:
+        #         res += 1
+        #         if res == len(nums):
+        #             count += 1
+        #             res = count + 1
+        
         num_dict = {}
         for index, num in enumerate(nums):
             num_dict[index] = num
