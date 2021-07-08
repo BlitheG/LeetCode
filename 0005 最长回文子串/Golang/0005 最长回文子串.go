@@ -11,7 +11,7 @@ func longestPalindrome(s string) string {
 
     // 保存起始位
     var str_range [2] int
-    var str = []string(s)
+    var str = []byte(s)
     for i:=0; i < len(s); i++ {
         // 把回文看成中间的部分全是同一字符，左右部分相对称
         // 找到下一个与当前字符不同的字符
@@ -23,7 +23,7 @@ func longestPalindrome(s string) string {
 
 
 
-func findLongest(str []string, low int, str_range [2]int) int {
+func findLongest(str []byte, low int, str_range [2]int) int {
 	// 查找中间部分
 	var high = low
 	for (high < len(str) - 1 && str[high + 1] == str[low]) {
